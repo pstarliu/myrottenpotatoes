@@ -14,4 +14,4 @@ class CreateMovies < ActiveRecord::Migration
     def down
       drop_table 'movies' # deletes the whole table and all its data!
     end
-end
+endg
