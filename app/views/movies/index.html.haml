@@ -8,12 +8,13 @@
       %th Rating
       %th Release Date
       %th More Info
-      %tbody
-        - @movies.each do |movie|
-          %tr
-            %td= movie.title
-            %td= movie.rating
-            %td= movie.release_date
+  %tbody
+    - @movies.each do |movie|
+      %tr
+        %td= movie.title
+        %td= movie.rating
+        %td= movie.release_date
+        %td= link_to "More about #{movie.title}", movie_path(movie)
 
 -# add to end of index.html.haml
 
