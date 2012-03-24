@@ -7,6 +7,8 @@ gem 'rails', '3.1.0'
 
 gem 'sqlite3'
 
+# The ruby-tmdb gem
+gem 'ruby-tmdb'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -19,6 +21,7 @@ end
 
 gem 'jquery-rails'
 
+gem 'factory_girl'
 # Use unicorn as the web server
 # gem 'unicorn'
 
@@ -38,6 +41,7 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'ZenTest'
+  gem 'simplecov', :require => false
   gem 'cucumber-rails'
   gem 'cucumber-rails-training-wheels' # some pre-fabbed step definitions
   gem 'database_cleaner' #to clear Cucumber's test database between runs
